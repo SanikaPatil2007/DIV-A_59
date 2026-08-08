@@ -1,0 +1,29 @@
+body {
+    background-color: lightgray;
+    font-family: Arial;
+    text-align: center;
+}
+
+.login {
+    background-color: white;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+h2 {
+    color: blue;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
