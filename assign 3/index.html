@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Result System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Result System</h1>
+
+        <form id="studentForm">
+
+            <div class="input-group">
+                <label for="name">Student Name</label>
+                <input type="text" id="name" placeholder="Enter student name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="roll">Roll Number</label>
+                <input type="number" id="roll" placeholder="Enter roll number" required>
+            </div>
+
+            <h2>Enter Marks</h2>
+
+            <div class="marks-container">
+
+                <div class="input-group">
+                    <label>Subject 1</label>
+                    <input type="number" id="sub1" min="0" max="100" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Subject 2</label>
+                    <input type="number" id="sub2" min="0" max="100" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Subject 3</label>
+                    <input type="number" id="sub3" min="0" max="100" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Subject 4</label>
+                    <input type="number" id="sub4" min="0" max="100" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Subject 5</label>
+                    <input type="number" id="sub5" min="0" max="100" required>
+                </div>
+
+            </div>
+
+            <button type="submit">Calculate Result</button>
+
+        </form>
+
+
+        <div id="result" class="result-box"></div>
+
+
+        <div class="students-section">
+
+            <h2>All Students</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Roll No.</th>
+                        <th>Name</th>
+                        <th>Total</th>
+                        <th>Percentage</th>
+                        <th>Grade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTable">
+                </tbody>
+
+            </table>
+
+            <div id="topper"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
