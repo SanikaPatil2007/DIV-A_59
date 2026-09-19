@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    padding: 40px 20px;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Main Form Container */
+.container {
+    width: 850px;
+    max-width: 100%;
+    margin: auto;
+
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 
+        0 20px 50px rgba(0, 0, 0, 0.25);
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #2d2d2d;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 35px;
+    font-size: 15px;
+}
+
+/* Two-column layout */
+.form-row {
+    display: flex;
+    gap: 25px;
+}
+
+/* Form Groups */
+.form-group {
+    flex: 1;
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Input Fields */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    background: #f8f9fc;
+
+    font-size: 15px;
+    color: #333;
+
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+/* Input Focus Effect */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #667eea;
+
+    background: white;
+
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+}
+
+/* Placeholder */
+input::placeholder,
+textarea::placeholder {
+    color: #aaa;
+}
+
+/* Textarea */
+textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+/* Gender */
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 10px 0;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.radio-group input {
+    width: auto;
+    accent-color: #667eea;
+}
+
+/* File Upload */
+input[type="file"] {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    margin-top: 10px;
+}
+
+button {
+    padding: 13px 28px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* Submit Button */
+.submit-btn {
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.35);
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.45);
+}
+
+/* Reset Button */
+.reset-btn {
+    background: #eeeeee;
+    color: #444;
+}
+
+.reset-btn:hover {
+    background: #dcdcdc;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .container {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .radio-group {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
